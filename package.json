@@ -40,7 +40,10 @@
     "alias": [
       "xmltojson.microservice.click"
     ],
-    "type": "npm"
+    "type": "npm",
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
   "devDependencies": {
     "ava": "0.19.1",
