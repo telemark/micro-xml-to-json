@@ -1,7 +1,7 @@
 {
   "name": "micro-xml-to-json",
   "description": "Microservice for converting xml to json",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "license": "MIT",
   "private": true,
   "author": {
@@ -56,7 +56,7 @@
   "dependencies": {
     "axios": "0.16.2",
     "marked": "0.3.6",
-    "micro": "8.0.4",
+    "micro": "8.0.3",
     "xml2js": "0.4.17"
   }
 }
