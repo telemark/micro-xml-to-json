@@ -64,5 +64,5 @@ typings/
 # dotenv environment variables file
 .env
 
-# package-lock
+# Lockfiles
 package-lock.json
