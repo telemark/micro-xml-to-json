@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.10.0"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -20,7 +20,8 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
     "start": "micro",
-    "now-deploy": "npm test && now --npm && now alias"
+    "dev": "micro-dev",
+    "deploy": "npm test && now && now alias"
   },
   "keywords": [
     "microservice",
@@ -30,12 +31,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/micro-xml-to-json.git"
+    "url": "git+https://github.com/telemark/micro-xml-to-json.git"
   },
   "bugs": {
     "url": "https://github.com/telemark/micro-xml-to-json/issues"
   },
-  "homepage": "https://github.com/telemark/micro-xml-to-json",
+  "homepage": "https://github.com/telemark/micro-xml-to-json#readme",
   "now": {
     "alias": [
       "xmltojson.microservice.click"
@@ -43,20 +44,24 @@
     "type": "npm",
     "env": {
       "NODE_ENV": "production"
+    },
+    "engines": {
+      "node": "8.9.4"
     }
   },
   "devDependencies": {
-    "ava": "0.19.1",
-    "coveralls": "2.13.1",
-    "nsp": "2.6.3",
-    "nyc": "10.3.2",
-    "standard": "10.0.2",
-    "test-listen": "1.0.2"
+    "ava": "0.24.0",
+    "coveralls": "3.0.0",
+    "micro-dev": "2.2.0",
+    "nsp": "3.1.0",
+    "nyc": "11.4.1",
+    "standard": "10.0.3",
+    "test-listen": "1.1.0"
   },
   "dependencies": {
-    "axios": "0.16.1",
-    "marked": "0.3.6",
-    "micro": "7.3.3",
-    "xml2js": "0.4.17"
+    "axios": "0.17.1",
+    "marked": "0.3.12",
+    "micro": "9.1.0",
+    "xml2js": "0.4.19"
   }
 }
