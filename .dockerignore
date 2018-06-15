@@ -1,1 +1,3 @@
 node_modules
+renovate.json
+package-lock.json

@@ -11,22 +11,24 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=8.9.4"
+    "node": ">=10.4.1"
   },
   "scripts": {
-    "test": "standard && nsp check && ava",
+    "test": "standard && npm audit && ava",
     "test-offline": "standard && ava",
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
     "start": "micro",
     "dev": "micro-dev",
-    "deploy": "npm test && now && now alias"
+    "deploy": "npm test && now && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "microservice",
     "micro",
     "sitemap",
+    "xml-to-json",
     "Telemark fylkeskommune"
   ],
   "repository": {
@@ -39,21 +41,20 @@
   "homepage": "https://github.com/telemark/micro-xml-to-json#readme",
   "now": {
     "alias": [
-      "xmltojson.microservice.click"
+      "xmltojson.tjeneste.win"
     ],
     "type": "npm",
     "env": {
       "NODE_ENV": "production"
     },
     "engines": {
-      "node": "8.9.4"
+      "node": "10.4.1"
     }
   },
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.1",
     "micro-dev": "3.0.0",
-    "nsp": "3.2.1",
     "nyc": "12.0.2",
     "standard": "11.0.1",
     "test-listen": "1.1.0"
