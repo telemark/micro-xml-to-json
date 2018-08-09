@@ -62,7 +62,7 @@
   "dependencies": {
     "axios": "0.18.0",
     "markdown-it": "8.4.2",
-    "micro": "9.3.2",
+    "micro": "9.3.3",
     "xml2js": "0.4.19"
   }
 }
