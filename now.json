@@ -1,0 +1,13 @@
+{
+  "name": "micro-xml-to-json",
+  "alias": [
+    "xmltojson.tjeneste.win"
+  ],
+  "type": "docker",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "features": {
+    "cloud": "v2"
+  }
+}

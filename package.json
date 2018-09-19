@@ -39,18 +39,6 @@
     "url": "https://github.com/telemark/micro-xml-to-json/issues"
   },
   "homepage": "https://github.com/telemark/micro-xml-to-json#readme",
-  "now": {
-    "alias": [
-      "xmltojson.tjeneste.win"
-    ],
-    "type": "npm",
-    "env": {
-      "NODE_ENV": "production"
-    },
-    "engines": {
-      "node": "10.4.1"
-    }
-  },
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.2",

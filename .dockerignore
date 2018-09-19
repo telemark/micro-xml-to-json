@@ -1,3 +1,6 @@
+.env
+.travis.yml
 node_modules
+production.env
 renovate.json
-package-lock.json
+test

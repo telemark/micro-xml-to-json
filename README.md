@@ -26,5 +26,3 @@ There is a prebuilt image on [hub.docker.com](https://hub.docker.com/r/telemark/
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of micro-xml-to-json](https://robots.kebabstudios.party/micro-sitemap-to-array.png "Robohash image of micro-xml-to-json")
