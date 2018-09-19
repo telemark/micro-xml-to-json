@@ -8,7 +8,7 @@ const getAndParse = require('./lib/get-and parse')
 const parseXML = require('./lib/parse-xml')
 
 module.exports = async (request, response) => {
-  const {query} = await parse(request.url, true)
+  const { query } = await parse(request.url, true)
   const data = ['POST'].includes(request.method) ? await json(request) : query
 
   if (data.xml && data.xml.length > 0) {
