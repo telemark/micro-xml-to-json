@@ -1,4 +1,4 @@
-const { readFile } = require('fs').promises
+const { readFileSync } = require('fs')
 const md = require('markdown-it')()
 const { json, send } = require('micro')
 const { parse } = require('url')
@@ -16,7 +16,7 @@ module.exports = async (request, response) => {
     response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With')
     send(response, 200, json)
   } else {
-    const readme = await readFile('./README.md', 'utf-8')
+    const readme = readFileSync(`${__dirname}/README.md`, 'utf-8')
     send(response, 200, md.render(readme))
   }
 }
