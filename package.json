@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/telemark/micro-xml-to-json#readme",
   "devDependencies": {
-    "ava": "1.4.1",
+    "ava": "3.13.0",
     "coveralls": "3.0.3",
     "micro-dev": "3.0.0",
     "nyc": "14.1.1",
